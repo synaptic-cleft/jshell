@@ -35,6 +35,7 @@ Feel free to use the [JavaDocs](https://docs.oracle.com/javase/10/docs/api/overv
 3. Or maybe kill a process that is running elsewhere on the machine?
 
 <details><summary>Solution</summary>
+	
 ```java
 ProcessHandle.
 // tab completion
@@ -57,6 +58,7 @@ See script [processhandle.jsh](../master/src/processhandle.jsh)
 Hint: When getting an instance you need to pass the option that class references will be retained
 
 <details><summary>Solution</summary>
+	
 ```java
 // Prior to Java 9:
 new Throwable().getStackTrace()
@@ -90,6 +92,7 @@ Now let’s put this code in a script file. Check with your help command how you
 </details>
 
 <details><summary>Solution</summary>
+	
 ```java
 /env --add-modules jdk.incubator.httpclient
 import jdk.incubator.http.*
@@ -132,6 +135,7 @@ Check more possibilities on customization of your JShell in the [JShell tool Jav
 3. try to apply a filter for big cats. We only want to deserialize cute small cats with a maximum of 50 bytes.
 
 <details><summary>Solution</summary>
+	
 ```java
 /open path/serialization.jsh
 // Note: forward references are allowed in JShell!
