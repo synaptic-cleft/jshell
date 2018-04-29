@@ -34,7 +34,7 @@ Feel free to use the [JavaDocs](https://docs.oracle.com/javase/10/docs/api/overv
 2. Or list all processes, map them and print forEach the command
 3. Or maybe kill a process that is running elsewhere on the machine?
 
-<details><summary>Solution</summary><p>
+<details><summary>Solution</summary>
 ```java
 ProcessHandle.
 // tab completion
@@ -44,7 +44,6 @@ ProcessHandle.allProcesses().map(ProcessHandle::info).map(a -> a.command()).filt
 ProcessHandle.of($pid).get().destroy()
 // check out possible shortcuts with /help shortcuts
 ```
-</p>
 </details>
 
 See script [processhandle.jsh](../src/processhandle.jsh)
@@ -57,7 +56,7 @@ See script [processhandle.jsh](../src/processhandle.jsh)
 3. Try to collect all classes involved in the stack.
 Hint: When getting an instance you need to pass the option that class references will be retained
 
-<details><summary>Solution</summary><p>
+<details><summary>Solution</summary>
 ```java
 // Prior to Java 9:
 new Throwable().getStackTrace()
@@ -70,7 +69,6 @@ StackWalker.getInstance(
 	StackWalker.Option.RETAIN_CLASS_REFERENCE).forEach(
 	s -> System.out.println(s.getClassName()))
 ```
-</p>
 </details>
 	
 See script [stackwalker.jsh](../src/stackwalker.jsh)
@@ -90,7 +88,7 @@ Now let’s put this code in a script file. Check with your help command how you
 </p>
 </details>
 
-<details><summary>Solution</summary><p>
+<details><summary>Solution</summary>
 ```java
 /env --add-modules jdk.incubator.httpclient
 import jdk.incubator.http.*
@@ -101,7 +99,6 @@ System.out.println(response.statusCode())
 /save -history /your/absolute/path/customFileName.jsh
 /open /your/absolute/path/customFileName.jsh
 ```
-</p>
 </details>
 See script [httpclient.jsh](../src/httpclient.jsh)
 
@@ -133,7 +130,7 @@ Check more possibilities on customization of your JShell in the [JShell tool Jav
 2. Open the code of script serialization.jsh in JShell and 
 3. try to apply a filter for big cats. We only want to deserialize cute small cats with a maximum of 50 bytes.
 
-<details><summary>Solution</summary><p>
+<details><summary>Solution</summary>
 ```java
 /open path/serialization.jsh
 // Note: forward references are allowed in JShell!
@@ -143,7 +140,6 @@ ObjectInputFilter.Config.setSerialFilter(ObjectInputFilter.Config.createFilter("
 // Example for blacklisting a package in the VM options in IntelliJ: 
 // -Djdk.serialFilter=!com.example.demo.**
 ```
-</p>
 </details>
 
 Good to know: can be used for Java 6/7/8 since backported
