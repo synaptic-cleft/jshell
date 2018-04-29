@@ -46,7 +46,7 @@ ProcessHandle.of($pid).get().destroy()
 ```
 </details>
 
-See script [processhandle.jsh](../src/processhandle.jsh)
+See script [processhandle.jsh](../master/src/processhandle.jsh)
 
 
 ### StackWalker
@@ -71,7 +71,8 @@ StackWalker.getInstance(
 ```
 </details>
 	
-See script [stackwalker.jsh](../src/stackwalker.jsh)
+See script [stackwalker.jsh](..
+n/stackwalker.jsh)
 
 ### HttpClient
 **_Wouldn’t it be dreamy if you could automatically test your locally running API with a simple script? No hastle with typing out curl. But using real Java with REST calls…_**
@@ -100,7 +101,7 @@ System.out.println(response.statusCode())
 /open /your/absolute/path/customFileName.jsh
 ```
 </details>
-See script [httpclient.jsh](../src/httpclient.jsh)
+See script [httpclient.jsh](../master/src/httpclient.jsh)
 
 
 ### Customizing JShell
@@ -119,7 +120,7 @@ See script [httpclient.jsh](../src/httpclient.jsh)
 // remember the mode for the next sessions
 ```
 
-See script [setMode.jsh](../src/setMode.jsh)
+See script [setMode.jsh](../master/src/setMode.jsh)
 
 Check more possibilities on customization of your JShell in the [JShell tool JavaDocs](https://docs.oracle.com/javase/9/tools/jshell.htm#JSWOR-GUID-C337353B-074A-431C-993F-60C226163F00)
 
@@ -144,11 +145,11 @@ ObjectInputFilter.Config.setSerialFilter(ObjectInputFilter.Config.createFilter("
 
 Good to know: can be used for Java 6/7/8 since backported
 
-See script [serialization.jsh](../src/serialization.jsh)
+See script [serialization.jsh](../master/src/serialization.jsh)
 
 ### Serialization with local type inference
 **_Wouldn’t it be dreamy if I wouldn't have to type all those stupidly long input/output class names?_**
 
 Guess what, the Java 10 compiler can help you out here! Go ahead and try it out: Write the serialization script with var where possible.
 
-See script [varNotation.jsh](../src/varNotation.jsh)
+See script [varNotation.jsh](../master/src/varNotation.jsh)
