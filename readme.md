@@ -73,8 +73,7 @@ StackWalker.getInstance(
 ```
 </details>
 	
-See script [stackwalker.jsh](..
-n/stackwalker.jsh)
+See script [stackwalker.jsh](../master/src/stackwalker.jsh)
 
 ### HttpClient
 **_Wouldn’t it be dreamy if you could automatically test your locally running API with a simple script? No hastle with typing out curl. But using real Java with REST calls…_**
